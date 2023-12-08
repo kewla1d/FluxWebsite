@@ -7,6 +7,7 @@
             * {
                 font-family: 'SF Pro', sans-serif;
             }
+
             div#cover {
                 width: 100%;
                 min-height: 100%;
@@ -14,18 +15,42 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
             }
+
             a#DownloadButton {
                 padding: 1%;
                 background-color: #007bff;
+                color:white;
                 border-radius: 100px;
+                font-size: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: all 0.25s cubic-bezier(0, 0, 0.12, 0.96);
+            }
+
+            a#DownloadButton:hover {
+                font-size: 27.5px;
+                padding: 1.25%;
+            }
+
+            div[name="Logo"] {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                color:white;
             }
         </style>
     </head>
 
     <body style="margin: 0;">
         <div id="cover">
-            <a id="DownloadButton">Download</a>
+            <div name="Logo">
+                <img src="https://github.com/kewla1d/FluxWebsite/blob/main/Resources/fluxIcon.png?raw=true" style="width: 100px;">
+                <h1>Flux</h1>
+            </div>
+            <a href="" id="DownloadButton">DOWNLOAD</a>
         </div>
     </body>
 </html>
