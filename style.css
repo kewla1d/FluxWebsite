@@ -1,0 +1,203 @@
+* {
+  color: white;
+  font-family: "SF Pro";
+  transition: all 0.6s cubic-bezier(0.47, -0.04, 0.07, 1.06);
+  animation: auto;
+}
+
+body {
+  background-color: black;
+  margin: 2vh;
+}
+
+div#cover {
+  /* style */
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+  background-size: 100% 100vh;
+  border-radius: 3vh;
+  /* layout */
+  padding-top: 2vh;
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 2vw;
+  overflow: hidden;
+}
+
+div#leftcolumn {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 4vh;
+}
+
+div#middle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+
+  div {
+    gap: 2vh;
+  }
+
+  h1#LogoText {
+    /* style */
+    background: linear-gradient(103deg, #8f00ff 0%, #ff00c7 96.02%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* typography */
+    font-size: 12vh;
+    font-weight: 900;
+  }
+
+  img {
+    transform: translateY(-7vh);
+    width: 20.5vw;
+    height: auto;
+  }
+}
+
+div#rightcolumn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 4vh;
+}
+
+div#feature {
+  /* style */
+  background-color: rgb(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 25px #00000025;
+  border-radius: 3vh;
+  backdrop-filter: blur(5vh);
+  /* typography */
+  font-size: 4vh;
+  font-weight: 700;
+  /* layout */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 2vh 4vh;
+  line-height: 0.89;
+}
+
+.feature_icon {
+  width: 7vh;
+  height: 7vh;
+
+  path {
+    fill: white;
+  }
+}
+
+.feature_text {
+  font-weight: 700;
+}
+
+div#box {
+  /* style */
+  background-color: rgb(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 25px #00000025;
+  border-radius: 3vh;
+  backdrop-filter: blur(5vh);
+  /* typography */
+  font-size: 4vh;
+  font-weight: 700;
+  line-height: 0.89;
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 4vh 2vh 4vh;
+}
+
+p {
+  line-height: 1.2;
+  letter-spacing: 1.2;
+  font-weight: normal;
+}
+
+div#topbar {
+  /* style */
+  background-color: rgb(255, 255, 255, 0);
+  border-radius: 3vh;
+  /* layout */
+  position: fixed;
+  z-index: 5;
+  width: 97.5vw;
+  padding: 3vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#topbar_group {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  flex-direction: row;
+}
+
+div#topbar.scrolled {
+  /* style */
+  background-color: rgb(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 25px #00000025;
+  border-radius: 3vh;
+  backdrop-filter: blur(5vh);
+  /* layout */
+  position: fixed;
+  z-index: 5;
+  width: 97.5vw;
+  padding: 3vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topbar_group_iconLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+}
+
+a:hover {
+  scale: 1.1;
+  filter: drop-shadow(0px 0px 10px #ffffff80);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255, 0.04);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 20px #ffffff80;
+}
